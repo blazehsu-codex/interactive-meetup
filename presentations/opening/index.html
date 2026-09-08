@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>開場：你和 AI 的距離 — AI Meetup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="presentation-page">
+    <nav class="presentation-nav" aria-label="簡報導覽"><a href="../../index.html#agenda">← 返回議程</a><span>AI / Meetup · 開場</span></nav>
+    <main class="presentation-main">
+      <div id="deck-root" class="deck" aria-label="簡報" aria-live="polite"></div>
+      <p id="response" class="response" role="status"></p>
+      <noscript>請啟用 JavaScript 以觀看互動簡報。</noscript>
+    </main>
+    <script type="module">
+      import { mountDeck } from '../../website/js/deck.js';
+      import { slides, promptIdeas } from './slides.js';
+      mountDeck(document.querySelector('#deck-root'), slides, promptIdeas);
+    </script>
+  </body>
+</html>

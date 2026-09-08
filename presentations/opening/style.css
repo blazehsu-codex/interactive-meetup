@@ -1,0 +1,4 @@
+@import url('../../website/css/main.css');
+
+/* 此份簡報的專屬樣式；其他講者不會受到影響。 */
+.presentation-page { --gold: #f0ca6b; }

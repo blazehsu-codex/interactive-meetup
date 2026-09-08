@@ -1,0 +1,32 @@
+[
+  {
+    "type": "opening",
+    "title": "破冰：你和 AI 的距離",
+    "speaker": "",
+    "time": "18:30 — 18:45",
+    "description": "從一個小問題開始，收集現場每個人的期待。",
+    "path": "presentations/opening/"
+  },
+  {
+    "type": "presentation",
+    "title": "從想法到能運作的 Prototype",
+    "speaker": "",
+    "time": "18:45 — 19:20",
+    "description": "用 AI 輔助把模糊需求變成可看、可點、可討論的產品。",
+    "path": null
+  },
+  {
+    "type": "interaction",
+    "title": "Live Lab：一起動手試",
+    "time": "19:20 — 19:50",
+    "description": "不是看 Demo；是和旁邊的人一起讓它發生。",
+    "path": null
+  },
+  {
+    "type": "closing",
+    "title": "帶著下一個問題離開",
+    "time": "19:50 — 20:15",
+    "description": "分享、提問，然後把今天的靈感接到下一次行動。",
+    "path": null
+  }
+]

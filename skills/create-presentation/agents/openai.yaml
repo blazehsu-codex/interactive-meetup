@@ -1,0 +1,4 @@
+interface:
+  display_name: "建立 Meetup 簡報"
+  short_description: "用自然語言建立獨立網頁簡報、調整專屬風格、串接活動議程並提供預覽"
+  default_prompt: "使用 $create-presentation 幫我建立 Meetup 網頁簡報，並開啟本機預覽。"

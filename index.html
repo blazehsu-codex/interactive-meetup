@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09090b" />
     <title>AI Meetup — Interactive Edition</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="website/css/main.css" />
   </head>
   <body>
     <div class="noise"></div>
@@ -37,33 +37,14 @@
 
       <section id="agenda" class="agenda section">
         <div class="section-intro"><p class="eyebrow"><span></span> THE FLOW</p><h2>今天，我們一起<br />走一段 <em>AI 的路。</em></h2></div>
-        <ol class="agenda-list">
-          <li><span class="agenda-number">01</span><div><p class="agenda-time">18:30 — 18:45</p><h3>破冰：你和 AI 的距離</h3><p>從一個小問題開始，收集現場每個人的期待。</p></div><button class="agenda-plus" aria-label="展開第一項">+</button></li>
-          <li><span class="agenda-number">02</span><div><p class="agenda-time">18:45 — 19:20</p><h3>從想法到能運作的 Prototype</h3><p>用 AI 輔助把模糊需求變成可看、可點、可討論的產品。</p></div><button class="agenda-plus" aria-label="展開第二項">+</button></li>
-          <li><span class="agenda-number">03</span><div><p class="agenda-time">19:20 — 19:50</p><h3>Live Lab：一起動手試</h3><p>不是看 Demo；是和旁邊的人一起讓它發生。</p></div><button class="agenda-plus" aria-label="展開第三項">+</button></li>
-          <li><span class="agenda-number">04</span><div><p class="agenda-time">19:50 — 20:15</p><h3>帶著下一個問題離開</h3><p>分享、提問，然後把今天的靈感接到下一次行動。</p></div><button class="agenda-plus" aria-label="展開第四項">+</button></li>
-        </ol>
+        <ol id="agenda-list" class="agenda-list" aria-live="polite"><li>正在載入議程…</li></ol>
+        <noscript>請啟用 JavaScript 以載入議程。<a href="presentations/opening/">進入開場簡報</a></noscript>
       </section>
 
       <section id="experience" class="experience section">
         <div class="section-intro centered"><p class="eyebrow"><span></span> INTERACTIVE DECK</p><h2>讓觀眾從「聽」<br />變成 <em>參與。</em></h2></div>
-        <div class="deck" aria-live="polite">
-          <div class="deck-top"><span id="slide-label">01 / 03</span><div class="deck-progress"><i id="progress-bar"></i></div><span>USE ← → KEYS</span></div>
-          <article class="slide active" data-slide="1">
-            <p class="slide-kicker">THE QUESTION</p><h3>如果 AI 是你的<br /><em>新同事，</em></h3><p>你希望它替你省下什麼？</p>
-            <div class="choice-grid"><button class="choice" data-choice="寫作與整理"><b>A</b> 寫作與整理</button><button class="choice" data-choice="重複性工作"><b>B</b> 重複性工作</button><button class="choice" data-choice="創意與發想"><b>C</b> 創意與發想</button><button class="choice" data-choice="分析與決策"><b>D</b> 分析與決策</button></div>
-          </article>
-          <article class="slide" data-slide="2">
-            <p class="slide-kicker">THE SHIFT</p><h3>不要把工作<br />交給 <em>工具。</em></h3><p>試著把「問題」交給一個能與你協作的夥伴。</p>
-            <div class="shift-visual"><span>想法</span><i>→</i><span>對話</span><i>→</i><span class="accent">共創</span></div>
-          </article>
-          <article class="slide" data-slide="3">
-            <p class="slide-kicker">YOUR TURN</p><h3>現在，讓一個<br /><em>想法發生。</em></h3><p>選一個本週最想解決的小問題，寫下第一個 prompt。</p>
-            <div class="prompt-box"><span>✦</span><p id="prompt-output">「請幫我把＿＿＿＿＿變成一個可以開始的計畫。」</p><button id="remix">給我一個靈感 ↻</button></div>
-          </article>
-          <div class="deck-controls"><button id="prev" aria-label="上一張投影片">←</button><button id="next">NEXT <span>→</span></button></div>
-        </div>
-        <p class="response" id="response">選一個選項，讓現場的 AI 地圖開始長出來。</p>
+        <p class="response">從開場問題開始，和現場的夥伴一起參與。</p>
+        <div class="hero-actions" style="justify-content:center;margin-top:32px"><a class="button primary" href="presentations/opening/">進入開場簡報 ↗</a></div>
       </section>
 
       <section class="principles section">
@@ -77,6 +58,6 @@
       </section>
     </main>
     <footer><a class="brand" href="#top"><span class="brand-mark">◈</span> AI / Meetup</a><p>Made for people who stay curious.</p><p>© 2026</p></footer>
-    <script src="script.js"></script>
+    <script type="module" src="website/js/app.js"></script>
   </body>
 </html>
