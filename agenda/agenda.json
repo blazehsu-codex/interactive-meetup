@@ -9,11 +9,11 @@
   },
   {
     "type": "presentation",
-    "title": "從想法到能運作的 Prototype",
-    "speaker": "",
+    "title": "用 AI 做 Prototype",
+    "speaker": "郁承",
     "time": "18:45 — 19:20",
-    "description": "用 AI 輔助把模糊需求變成可看、可點、可討論的產品。",
-    "path": null
+    "description": "20 分鐘分享：需求釐清、實作 Demo 與心得，從報名表案例走完一次 Prototype 流程。",
+    "path": "presentations/ai-prototype/"
   },
   {
     "type": "interaction",

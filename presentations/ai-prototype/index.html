@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111116" />
+    <title>用 AI 做 Prototype — 郁承 · AI Meetup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="presentation-page">
+    <nav class="presentation-nav" aria-label="簡報導覽"><a href="../../index.html#agenda">← 返回議程</a><span>AI / MEETUP <b>郁承 · 20 MIN</b></span></nav>
+    <main class="presentation-main">
+      <div id="deck-root" class="deck" aria-label="用 AI 做 Prototype 簡報" aria-live="polite"></div>
+      <p id="response" class="response" role="status"></p>
+      <noscript>請啟用 JavaScript 以觀看互動簡報。</noscript>
+    </main>
+    <script type="module">
+      import { mountDeck } from '../../website/js/deck.js';
+      import { slides, promptIdeas, bindDemo } from './slides.js';
+      const root = document.querySelector('#deck-root');
+      mountDeck(root, slides, promptIdeas);
+      bindDemo(root);
+    </script>
+  </body>
+</html>
